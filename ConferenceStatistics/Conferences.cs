@@ -11,6 +11,6 @@ public class Conferences
 
     public decimal GetFemaleConfNumber(string conferenceName, int year)
     {
-        return 0;
+        return _conferences.Sum(c => c.GetFemaleConfNumber());
     }
 }
